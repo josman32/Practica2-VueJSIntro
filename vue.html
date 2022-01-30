@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Datos academicos de Jose Manuel Mejia Arias</h1>
+    <div id="root">
+       <!-- <input type="text" id="input">-->
+    <!--<p>El valor del input es {{text}}</p>-->
+       
+        <p v-text="nombre1"></p>
+        <p v-text="carrera"></p>
+        <p v-text="codigo"></p>
+        <p v-text="univer"></p>
+        <h1>Nombre de estudiante con etiqueta H2 y en negrita</h1>
+        <p v-html="nombre2"></p>
 
+        <h1>Macotas y edades</h1>
+        <ul>
+            <li>{{mascotas[0]}}</li>
+            <li>{{edadmascotas[0]}}</li>
+
+            <li>{{mascotas[1]}}</li>
+            <li>{{edadmascotas[1]}}</li>
+
+            <li>{{mascotas[2]}}</li>
+            <li>{{edadmascotas[2]}}</li>
+
+            <li>{{mascotas[3]}}</li>
+            <li>{{edadmascotas[3]}}</li>
+
+            <li>{{mascotas[4]}}</li>
+            <li>{{edadmascotas[4]}}</li>
+        </ul>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script>
+        let data={text: "<b>Nombre: Jose Manuel Mejia Arias</b>"}
+       
+
+        //instancia
+        new Vue({
+            
+            el:'#root',
+            data: {
+                nombre1: 'NOMBRE: Jose Manuel Mejia Arias',
+                carrera: 'CARRERA: Ingeieria en sistemas',
+                codigo: 'CODIGO: SMIS047319',
+                univer: 'UNIVERSIDAD: Gerardo Barrios',
+                nombre2: '<h2><b>Jose Manuel Mejia Arias</b></h2>',
+                mascotas: ['Nombre: Pacun','Nombre: Terry','Nombre: Oso','Nombre: Kiara','Nombre: Michi'],
+                edadmascotas: ['Edad: 1','Edad: 2','Edad: 3','Edad: 4','Edad: 4'],
+
+            
+            }
+            
+        })
+    </script>
+</body>
+</html>
