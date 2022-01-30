@@ -75,7 +75,7 @@ removeItem.addEventListener('click', () =>{
   label.innerHTML= 'se elimino el elemento '+index;
   divAlert.classList.add('alert', 'alert-danger'); // clase de la alerta
   
- // items[index].parentNode.removeChild(items[index]);
+  items[index].parentNode.removeChild(items[index]);
   divAlert.appendChild(label);
   showDiv.appendChild(divAlert);
 });
