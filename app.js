@@ -70,8 +70,8 @@ list.onclick = function(e) {
 //eliminar elemento seleccionado
 removeItem.addEventListener('click', () =>{
   let showDiv = document.getElementById('list');
- /* let divAlert = document.createElement('div');
-  let label = document.createElement('label');
+  let divAlert = document.createElement('div');
+ /* let label = document.createElement('label');
   label.innerHTML= 'se elimino el elemento '+index;
   divAlert.classList.add('alert', 'alert-danger'); // clase de la alerta
   
