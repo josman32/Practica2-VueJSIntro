@@ -76,6 +76,8 @@ removeItem.addEventListener('click', () =>{
   divAlert.classList.add('alert', 'alert-danger'); // clase de la alerta
   
   items[index].parentNode.removeChild(items[index]);
+  setTimeout(function(){
   divAlert.appendChild(label);
   showDiv.appendChild(divAlert);
+  }, 1000 * 10);
 });
