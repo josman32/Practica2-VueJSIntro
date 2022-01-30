@@ -77,5 +77,5 @@ removeItem.addEventListener('click', () =>{
   
   items[index].parentNode.removeChild(items[index]);
   divAlert.appendChild(label);
-  /*showDiv.appendChild(divAlert);*/
+  showDiv.appendChild(divAlert);
 });
