@@ -79,6 +79,6 @@ removeItem.addEventListener('click', () =>{
   divAlert.appendChild(label);
   showDiv.appendChild(divAlert);
   setTimeout(() => {
-  document.getElementById('label'+'divAlert'+'showDiv').style.display = "none";
+  document.getElementById('label'+'divAlert'+'showDiv').style.display = none;
   }, 1000 * 5);
 });
